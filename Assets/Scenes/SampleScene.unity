@@ -4263,6 +4263,8 @@ MonoBehaviour:
   _hitEffectPrefab: {fileID: 8629959832034739222, guid: c253279dd7a0f654d93845acca02aae0,
     type: 3}
   _resources: {fileID: 1459197778}
+  _particlePrefab: {fileID: 3676862888360759854, guid: aa9cc8cc0540d3542a50d8aad0a9125f,
+    type: 3}
 --- !u!1 &1140274817
 GameObject:
   m_ObjectHideFlags: 0
