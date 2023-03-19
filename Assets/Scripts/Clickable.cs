@@ -12,17 +12,12 @@ public class Clickable : MonoBehaviour
 
     private int _coinsPerClick = 1;
 
-    private static List<Vector3> _particlesPositions = new List<Vector3>
-    {
-        new Vector3(-1.06f, 1.9948f, 0f),
-        new Vector3(1.23f, 1.9948f, 0f),
-        new Vector3(0.07f, 1.9948f, -1.444f)
-    };
+    private static Vector3 _particlesPosition = new(0f, 2.14f, 0f);
 
     // Метод вызывается из Interaction при клике на объект
     public void Hit()
     {
-        var particle = Instantiate(_particlePrefab, _particlesPositions[Random.Range(0, 3)], Quaternion.identity);
+        var particle = Instantiate(_particlePrefab, _particlesPosition, Quaternion.identity);
         particle.SetResources(_resources);
         StartCoroutine(HitAnimation());
     }
